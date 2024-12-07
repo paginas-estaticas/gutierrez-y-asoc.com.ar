@@ -11,11 +11,12 @@
 }
 
 * {
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
 header {
-    font-family: var(--headerFontSize);
+    font-family: var(--primaryFont);
     font-size: var(--headerFontSize);
     color: var(--blackColor);
 }
@@ -30,6 +31,20 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    all: unset;
+}
+
+.common-padding {
+    max-width: 90rem;
+    padding: 0 4%;
+}
+
 /* ==== HEADER & NAV ==== */
 
 header {
@@ -40,19 +55,41 @@ header {
     box-shadow: 0px -6px 20px;
 }
 
+header::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 0vh;
+    background-color: #00000099;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    top: 0;
+    right: 0;
+    z-index: -11;
+    transition: opacity 0.3s ease-in-out;
+}
+
+header.active::before {
+    height: 150vh;
+    opacity: 1;
+}
+
 #header-div {
     width: 100%;
-    height: 44px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
+    height: auto;
+    padding: 0.5rem 1rem;
+}
+
+#header-div a {
+    line-height: 0;
 }
 
 #header-logo {
     width: 84px;
     height: auto;
     border-radius: 0;
+    vertical-align: middle;
 }
 
 #header-top {
@@ -65,10 +102,8 @@ header {
     width: 8%;
     display: block;
     cursor: pointer;
-}
-
-#hamburguer-menu-icon.active {
-    cursor: pointer;
+    margin: 0;
+    z-index: 1000;
 }
 
 .bar {
@@ -76,6 +111,7 @@ header {
     max-width: 36px;
     height: 3px;
     margin: 5px auto;
+    z-index: 1000;
     background-color: var(--blackColor);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -100,13 +136,15 @@ a {
 
 nav {
     font-size: 1.125rem;
-    width: 100%;
+    width: 67%;
+    height: 100vh;
     position: absolute;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     background-color: white;
-    top: 60px;
-    left: 0;
+    top: 0;
+    left: 33%;
     gap: 0;
     text-align: center;
     box-shadow: inset 0px 8px 24px lightgrey;
@@ -122,13 +160,12 @@ nav.active {
 nav ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 36px;
-    margin-bottom: 36px;
+    gap: 2rem;
+    padding: 6rem 0;
 }
 
 nav ul li {
-    color: var(--yourColor);
+    color: var(--blackColor);
 }
 
 
