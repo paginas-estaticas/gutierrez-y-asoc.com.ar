@@ -101,6 +101,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
 }
 
 header::before {
@@ -115,7 +116,14 @@ header::before {
     top: 0;
     right: 0;
     z-index: -11;
-    transition: height 0s ease-in-out, opacity 0.3s ease-in-out;
+    transition: 
+        height 0s ease-in-out, 
+        opacity 0.3s ease-in-out;
+}
+
+header.scrolled {
+    background-color: var(--whiteColor);
+    transition: background-color 0.3s ease-in-out;
 }
 
 header.active::before {
@@ -137,15 +145,17 @@ header.deactivate::before {
     line-height: 0;
 }
 
-#header-logo-light, #header-logo-dark {
+#header-logo {
     width: 100px;
     height: auto;
     border-radius: 0;
     vertical-align: middle;
+    
 }
 
-#header-logo-dark {
-    display: none;
+#header-logo g, #header-logo path {
+    fill: white;
+    transition: all 0.3s ease-in-out;
 }
 
 #header-top {
@@ -185,6 +195,20 @@ header.deactivate::before {
 #hamburguer-menu-icon.active .bar:nth-child(3) {
     transform: translateY(-4px) rotate(-45deg);
     background-color: var(--blackColor);
+}
+
+header.scrolled .bar {
+    background-color: var(--blackColor);
+}
+
+header.scrolled #header-logo g, 
+header.scrolled #header-logo path {
+    fill: var(--blackColor);
+}
+
+header.scrolled #header-logo.light g, 
+header.scrolled #header-logo.light path {
+    fill: var(--whiteColor);
 }
 
 a {
