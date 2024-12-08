@@ -2,12 +2,19 @@ const headerElement = document.getElementsByTagName("header")[0];
 const hamburgerMenu = document.getElementById("hamburguer-menu-icon");
 const navMenu = document.getElementsByTagName("nav")[0];
 
+function delay(seconds) {
+    return new Promise(resolve => setTimeout(resolve, seconds * 1000));
+  }
 
-hamburgerMenu.addEventListener("click", () => {
-    if (hamburgerMenu.classList.contains("activte")) {
-        headerElement.classList.remove("active")
+hamburgerMenu.addEventListener("click", async () => {
+    if (hamburgerMenu.classList.contains("active")) {
         hamburgerMenu.classList.remove("active");
         navMenu.classList.remove("active");
+        headerElement.classList.add("deactivate");
+        await delay(0.3)
+        headerElement.classList.remove("active"); 
+        headerElement.classList.add("deactivate");
+        headerElement.classList.remove("deactivate");
     } else {
         headerElement.classList.toggle("active")
         hamburgerMenu.classList.toggle("active");
@@ -15,9 +22,6 @@ hamburgerMenu.addEventListener("click", () => {
     } 
 });
 
-function delay(seconds) {
-    return new Promise(resolve => setTimeout(resolve, seconds * 1000));
-  }
 
 document.querySelectorAll(".nav-li-element").forEach(element => 
     element.addEventListener("click", async () => {

@@ -1,13 +1,32 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("Fuentes/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+
 :root {
     --strongColor: rgb(143, 53, 53);
     --whiteColor: #ffffff;
     --blackColor: #000000;
+    --lightGreyColor: #474747;
     --greyColor: #3b3b3b;
     --primaryFont: Georgia, 'Times New Roman', Times, serif;
-    --secondaryFont: "Arial", sans-serif;
+    --secondaryFont: "Rubik", sans-serif;
     --smallTitleFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
+}
+
+button {
+    all: unset;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    all: unset;
 }
 
 * {
@@ -27,23 +46,54 @@ body {
     color: var(--greyColor);
 }
 
-p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-a {
-    all: unset;
-}
-
 .common-padding {
     max-width: 90rem;
     padding: 0 4%;
 }
+
+h1, h2, h3, .small-title {
+    font-family: var(--primaryFont);
+    margin: 1rem auto;
+}
+
+p {
+    color: var(--whiteColor);
+}
+
+button {
+    min-width: 12rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    cursor: pointer;
+}
+
+.call-to-action {
+    color: var(--whiteColor);
+    border: 1px solid var(--whiteColor);
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.call-to-action:hover {
+    color: var(--blackColor);
+    background-color: var(--whiteColor);
+    border: 1px solid var(--whiteColor);
+}
+
+.button-underline a {
+    padding: 0.5rem;
+    background: 
+       linear-gradient(90deg, currentColor calc(100%/3), transparent 0 calc(200%/3), currentColor 0) 
+       var(--d, 0%) 100% / 300% 3px
+       no-repeat;
+    transition: 0.5s;
+}
+
+.button-underline:hover a {
+    --d: 100%;
+}
+
 
 /* ==== HEADER & NAV ==== */
 
@@ -51,8 +101,6 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1000;
-    background-color: var(--whiteColor);
-    box-shadow: 0px -6px 20px;
 }
 
 header::before {
@@ -67,7 +115,7 @@ header::before {
     top: 0;
     right: 0;
     z-index: -11;
-    transition: opacity 0.3s ease-in-out;
+    transition: height 0s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 header.active::before {
@@ -75,21 +123,29 @@ header.active::before {
     opacity: 1;
 }
 
+header.deactivate::before {
+    opacity: 0;
+}
+
 #header-div {
     width: 100%;
     height: auto;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
 }
 
 #header-div a {
     line-height: 0;
 }
 
-#header-logo {
-    width: 84px;
+#header-logo-light, #header-logo-dark {
+    width: 100px;
     height: auto;
     border-radius: 0;
     vertical-align: middle;
+}
+
+#header-logo-dark {
+    display: none;
 }
 
 #header-top {
@@ -112,7 +168,7 @@ header.active::before {
     height: 3px;
     margin: 5px auto;
     z-index: 1000;
-    background-color: var(--blackColor);
+    background-color: var(--whiteColor);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -123,10 +179,12 @@ header.active::before {
 
 #hamburguer-menu-icon.active .bar:nth-child(2) {
     transform: translateY(4px) rotate(45deg);
+    background-color: var(--blackColor);
 }
 
 #hamburguer-menu-icon.active .bar:nth-child(3) {
     transform: translateY(-4px) rotate(-45deg);
+    background-color: var(--blackColor);
 }
 
 a {
@@ -136,7 +194,7 @@ a {
 
 nav {
     font-size: 1.125rem;
-    width: 67%;
+    width: 63%;
     height: 100vh;
     position: absolute;
     z-index: 100;
@@ -144,7 +202,7 @@ nav {
     flex-direction: column;
     background-color: white;
     top: 0;
-    left: 33%;
+    left: 37%;
     gap: 0;
     text-align: center;
     box-shadow: inset 0px 8px 24px lightgrey;
@@ -166,6 +224,44 @@ nav ul {
 
 nav ul li {
     color: var(--blackColor);
+}
+
+/* ==== STATEMENT ==== */
+
+#estrategia-impositiva {
+    background-image: url("Imagenes/background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#estrategia-impositiva .common-padding {
+    color: var(--whiteColor);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 200;
+    line-height: 2.5rem;
+    padding-top: 1rem;
+}
+
+#estrategia-impositiva p {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    font-weight: 100;
+    padding: 0.25rem 0;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 
