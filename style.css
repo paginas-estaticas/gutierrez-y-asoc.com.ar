@@ -1,6 +1,9 @@
 @font-face {
-    font-family: "Rubik";
-    src: url("Fuentes/Rubik/Rubik-VariableFont_wght.ttf") format("truetype");
+    font-family: "Monsterrat";
+    src: 
+        url("Fuentes/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype"),
+        url("Fuentes/Montserrat/webfontkit-20241208-085925/montserrat-variablefont_wght-webfont.woff") format("woff"),
+        url("Fuentes/Montserrat/webfontkit-20241208-085925/montserrat-variablefont_wght-webfont.woff2") format("woff2");
 }
 
 :root {
@@ -29,6 +32,11 @@ a {
     all: unset;
 }
 
+img {
+    width: 100%;
+    border-radius: 4px;
+}
+
 * {
     margin: 0 auto;
     box-sizing: border-box;
@@ -53,11 +61,12 @@ body {
 
 h1, h2, h3, .small-title {
     font-family: var(--primaryFont);
+    color: var(--blackColor);
     margin: 1rem auto;
 }
 
 p {
-    color: var(--whiteColor);
+    color: var(--blackColor);
 }
 
 button {
@@ -261,22 +270,24 @@ nav ul li {
 
 #estrategia-impositiva .common-padding {
     color: var(--whiteColor);
-    padding-top: 6rem;
+    padding-top: 8rem;
     padding-bottom: 6rem;
     text-align: center;
 }
 
-h1 {
-    font-size: 2.25rem;
+#estrategia-impositiva h1 {
+    font-size: 2.5rem;
     font-weight: 200;
     line-height: 2.5rem;
     padding-top: 1rem;
+    color: var(--whiteColor);
 }
 
 #estrategia-impositiva p {
+    color: var(--whiteColor);
     font-size: 1.25rem;
-    line-height: 2.5rem;
-    font-weight: 100;
+    line-height: 2.375rem;
+    font-weight: 300;
     padding: 0.25rem 0;
 }
 
@@ -286,6 +297,89 @@ h1 {
     align-items: center;
     gap: 1.5rem;
     padding: 1.5rem 0;
+}
+
+#servicios-div-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.servicios-card {
+    position: relative;
+    width: 100%;
+}
+
+.servicios-card::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    display: block;
+    z-index: 10;
+    content: '';
+    background: linear-gradient(to bottom,rgba(15,15,15,0),rgba(30, 30, 30, 0.75) 100%);
+}
+
+.servicios-card a {
+    position: relative;
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    box-shadow: inset 0 -12px -6px black;
+    transition: background-size 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.servicios-card a:hover {
+    background-size: 120%;
+}
+
+.servicios-card a,
+.servicios-card a::before,
+.servicios-card::before {
+    border-radius: 8px;
+}
+
+.servicios-card a::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    display: block;
+    z-index: 10;
+    content: '';
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 100%);
+    transition: all 0.5s ease;
+}
+
+.servicios-card a:hover::before {
+    opacity: 1;
+}
+
+.servicios-card h3 {
+    font-size: 1.375rem;
+    align-self: flex-end;
+    margin: 1.25rem;
+    z-index: 100;
+    color: var(--whiteColor);
+}
+
+#card-servicio-sociedades {
+    background-image: url(Imagenes/empresa-1.jpg);
+}
+
+#card-servicio-personas {
+    background-image: url(Imagenes/personal-1.jpg);
+}
+
+#card-servicio-patrimonio {
+    background-image: url(Imagenes/patrimonio-1.jpg);
 }
 
 
