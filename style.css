@@ -492,10 +492,17 @@ main {
     padding: 1rem;
 }
 
-#section-contacto-contacto .common-padding > div {
-    margin: 3rem 0;
+#section-contacto-contacto .common-padding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
 }
 
+#section-contacto-contacto .small-title {
+    line-height: 4rem;
+    text-transform: none;
+}
 .medio-de-contacto {
     display: flex;
     justify-content: left;
@@ -512,6 +519,10 @@ main {
     max-width: 1.5rem;
     height: auto;
     margin: 0;
+}
+
+#section-contacto-contacto hr {
+    width: 100%;
 }
 
 #contact-form h3 {
@@ -553,6 +564,19 @@ main {
 #div-contact-form-button {
     text-align: center;
     margin: 2rem;
+}
+
+.div-top-page {
+    color: var(--whiteColor);
+    padding-top: 2rem;
+    background-image: url("Imagenes/background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.div-top-page h2 {
+    color: var(--whiteColor);
 }
 
 footer {
