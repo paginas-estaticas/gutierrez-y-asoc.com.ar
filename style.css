@@ -84,6 +84,7 @@ h3 {
 p {
     line-height: 2rem;
     color: var(--blackColor);
+    margin-bottom: 1rem;
 }
 
 .small-title {
@@ -158,6 +159,7 @@ header::before {
 }
 
 header.scrolled {
+    box-shadow: 0 -4px 12px var(--lightGreyColor);
     background-color: var(--whiteColor);
     transition: background-color 0.3s ease-in-out;
 }
@@ -283,6 +285,8 @@ nav ul {
 }
 
 nav ul li {
+    font-family: var(--secondaryFont);
+    font-weight: 500;
     color: var(--blackColor);
 }
 
@@ -318,6 +322,7 @@ main {
     color: var(--whiteColor);
     font-size: 1.25rem;
     font-weight: 300;
+    margin-bottom: 0;
     padding: 0.25rem 0;
 }
 
@@ -444,7 +449,7 @@ main {
     font-size: 1rem;
     color: var(--blackColor);
     border: 2px solid var(--blackColor);
-    margin-top: 2rem;
+    margin-top: 1rem;
     transition: all 0.1s ease;
 }
 
@@ -525,10 +530,6 @@ main {
     width: 100%;
 }
 
-#contact-form h3 {
-    text-align: center;
-}
-
 #contact-form form {
     margin: 1rem 0;
 }
@@ -575,14 +576,26 @@ main {
     background-position: center;
 }
 
-.div-top-page h2 {
+.div-top-page h1 {
+    font-size: 2.5rem;
     color: var(--whiteColor);
+    text-align: center;
+    padding: 4rem 0 2rem;
+}
+
+#section-nosotros-nosotros h2 {
+    text-align: left;
+    padding-top: 1rem;
 }
 
 footer {
     padding-top: 1rem;
     color: var(--whiteColor);
     background-color: var(--blackColor);
+}
+
+footer .common-padding {
+    padding-bottom: 1rem;
 }
 
 footer a {
@@ -634,7 +647,7 @@ footer hr {
     color: var(--whiteColor);
     max-width: none;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.5rem 0 0;
 }
 
 
