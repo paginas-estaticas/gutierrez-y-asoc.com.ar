@@ -425,12 +425,11 @@ main {
 #servicios-texto-ul {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
 
 .servicio-title-container {
     height: auto;
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 
 .servicio-title-container svg {
@@ -477,6 +476,7 @@ main {
 
 #ul-opiniones-clientes p {
     font-style: italic;
+    margin-bottom: 0;
 }
 
 .open-quote {
