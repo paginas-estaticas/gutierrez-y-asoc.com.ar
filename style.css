@@ -297,7 +297,7 @@ main {
 /* ==== STATEMENT ==== */
 
 #estrategia-impositiva {
-    background-image: url("Imagenes/background-1.jpg");
+    background-image: url("Imagenes/background-5-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -422,9 +422,20 @@ main {
     background-image: url(Imagenes/patrimonio-1.jpg);
 }
 
+#servicios-texto {
+    padding: 4rem 0;
+}
+
 #servicios-texto-ul {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+}
+
+#servicios-texto-ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .servicio-title-container {
@@ -583,9 +594,11 @@ main {
     padding: 4rem 0 2rem;
 }
 
-#section-nosotros-nosotros h2 {
+#section-nosotros-nosotros h2,
+#section-contacto-contacto h2 {
     text-align: left;
     padding-top: 1rem;
+    margin: -2rem 0 0;
 }
 
 footer {
@@ -654,14 +667,17 @@ footer hr {
 @media (min-width: 992px) {
     #header-div {
         width: 80%;
+        height: 80px;
         max-width: 90rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-        padding-top: 40px;
-        padding-bottom: 36px;
         font-size: 1rem;
+    }
+
+    #header-top {
+        margin: 0;
     }
 
     #header-logo {
@@ -674,9 +690,12 @@ footer hr {
 
     nav {
         width: auto;
+        height: 2rem;
         position: inherit;
         top: 0;
         left: 0;
+        margin: 0;
+        background-color: transparent;
         box-shadow: none;
         transition: none;
         transform: none;
@@ -686,9 +705,12 @@ footer hr {
         flex-direction: row;
         margin: 0 auto;
         gap: 36px;
+        margin: auto;
+        padding: 0;
     }
 
     .nav-li-element {
+        color: white;
         background: 
            linear-gradient(currentColor 0 0) 
            var(--d, 201%) 100% /200% 2px 
@@ -702,5 +724,107 @@ footer hr {
 
     nav ul a {
         font-size: 1.125rem;
+    }
+
+    header.scrolled .nav-li-element {
+        color: black;
+    }
+
+    h2 {
+        font-size: 3rem;
+        max-width: 32ch;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    #estrategia-impositiva .common-padding {
+        padding: 12rem 4% 10rem;
+    }
+
+    #estrategia-impositiva h1 {
+        font-size: 3.25rem;
+        line-height: 3.25rem;
+        max-width: 24ch;
+    }
+
+    #estrategia-impositiva p {
+        max-width: 54ch;
+    }
+
+    #servicios-div-card ul {
+        flex-direction: row;
+    }
+
+    .servicios-card a {
+        min-height: 320px;
+    }
+
+    .servicios-card h3 {
+        font-size: 1.75rem;
+    }
+
+    #servicios-texto-ul {
+        gap: 160px;
+    }
+
+    #servicios-texto-ul li {
+        flex-direction: row-reverse;
+        gap: 64px;
+    }
+
+    #servicios-texto-ul li:nth-child(2n - 1) {
+        flex-direction: row;
+    }
+
+    .servicio-texto-div-img {
+        max-width: 28%;
+    }
+
+    #section-nosotros .common-padding {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    #section-nosotros h2 {
+        text-align: left;
+    }
+
+    #section-nosotros img {
+        min-width: 640px;
+    }
+
+    #ul-opiniones-clientes {
+        flex-direction: row;
+        padding: 2rem 0;
+    }
+
+    #ul-opiniones-clientes li {
+        max-width: 360px;
+    }
+
+    #section-contacto-index h2 {
+        max-width: 20ch;
+    }
+
+    #section-contacto-contacto .common-padding > div {
+        margin: auto 4%;
+    }
+
+    #footer-div-top {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 250px;
+        height: 100%;
+        padding: 1rem 0 3rem;
+    }
+
+    #footer-div-top-logo {
+        max-width: 100%;
+        width: 160px;
+        height: 100%;
     }
 }
