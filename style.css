@@ -94,10 +94,11 @@ p {
     margin: 1rem auto;
 }
 
-button {
+main a {
     min-width: 12rem;
     font-size: 1.125rem;
     font-weight: 600;
+    text-align: center;
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
     padding: 0 0.5rem;
     text-align: center;
@@ -118,7 +119,7 @@ button {
     border: 2px solid var(hrColor);
 }
 
-.button-underline a {
+.button-underline {
     padding: 0.5rem;
     background: 
        linear-gradient(90deg, currentColor calc(100%/3), transparent 0 calc(200%/3), currentColor 0) 
@@ -127,7 +128,7 @@ button {
     transition: 0.5s;
 }
 
-.button-underline:hover a {
+.button-underline:hover {
     --d: 100%;
 }
 
@@ -341,7 +342,7 @@ main {
 #servicios-div-card ul {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .servicios-card {
@@ -371,6 +372,7 @@ main {
     background-position: center;
     box-shadow: inset 0 -12px -6px black;
     transition: background-size 1s ease;
+    padding: 0;
 }
 
 .servicios-card a:hover {
@@ -460,6 +462,8 @@ main {
     color: var(--blackColor);
     border: 2px solid var(--blackColor);
     margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
     transition: all 0.1s ease;
 }
 
@@ -468,15 +472,42 @@ main {
     background-color: var(--blackColor);
 }
 
+#servicios-servicios .common-padding {
+    padding-top: 0;
+}
+
+#servicios-servicios .servicio-title-container:first-child {
+    padding-top: 2rem;
+}
+
+#servicios-servicios h2,
+#servicios-servicios p {
+    text-align: left;
+}
+
+#servicios-servicios h2 {
+    padding: 1rem 0;
+}
+
 #section-nosotros {
     background-image: url("Imagenes/background-4.jpg");
     background-position: center;
     background-size: cover;
 }
 
+#section-nosotros .text-container {
+    display: flex;
+    flex-direction: column;
+}
+
 #section-nosotros h2,
 #section-nosotros p {
     color: var(--whiteColor);
+}
+
+#section-nosotros .button-underline {
+    color: var(--whiteColor);
+    margin: 1rem auto 2rem;
 }
 
 #ul-opiniones-clientes {
@@ -500,12 +531,15 @@ main {
     line-height: 2rem;
 }
 
-#section-contacto-index .common-padding {
+#section-contacto-index .common-padding,
+#servicios-contacto .common-padding {
     text-align: center;
 }
 
-#section-contacto-index h2 {
+#section-contacto-index h2,
+#servicios-contacto h2 {
     padding: 1rem;
+    padding-bottom: 2rem;
 }
 
 #section-contacto-contacto .common-padding {
@@ -592,6 +626,7 @@ main {
     color: var(--whiteColor);
     text-align: center;
     padding: 4rem 0 2rem;
+    text-shadow: 2px 2px 30px black;
 }
 
 #section-nosotros-nosotros h2,
@@ -599,6 +634,41 @@ main {
     text-align: left;
     padding-top: 1rem;
     margin: -2rem 0 0;
+}
+
+#main-preguntas-frecuentes h1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#section-preguntas-frecuentes .common-padding {
+    padding-top: 0;
+}
+
+#section-preguntas-frecuentes ul h2,
+#section-preguntas-frecuentes ul p {
+    text-align: left;
+    margin: 0;
+    max-width: none;
+}
+
+#section-preguntas-frecuentes ul h2 {
+    font-size: 1.875rem;
+    padding-top: 2.25rem;
+    padding-bottom: 1rem;
+}
+
+#section-preguntas-frecuentes ul p {
+    font-size: 1rem;
+}
+
+.dot-list {
+    list-style-type: initial;
+    padding: 1rem 2rem  0;
+}
+
+.dot-list li {
+    padding-bottom: 1rem;
 }
 
 footer {
@@ -806,7 +876,35 @@ footer hr {
         max-width: 360px;
     }
 
-    #section-contacto-index h2 {
+    #section-nosotros-nosotros .common-padding,
+    #servicios-servicios .common-padding {
+        padding-top: 4rem;
+    }
+
+    #servicios-servicios h2 {
+        margin: 0;
+    }
+
+    .sub-section-servicios {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5rem;
+        padding-bottom: 4rem;
+    }
+
+    .sub-section-servicios:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .sub-section-servicios img {
+        min-width: 36%;
+        height: fit-content;
+        
+    }
+
+    #section-contacto-index h2,
+    #servicios-contacto h2 {
         max-width: 20ch;
     }
 

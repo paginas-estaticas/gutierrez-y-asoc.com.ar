@@ -7,14 +7,14 @@
         <meta name="description" content="your description here...">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Citronov WebSites">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="Imagenes/Logo/gya-icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="icon" href="../Imagenes/Logo/gya-icon.ico" type="image/x-icon">
     </head>
     <body>
-        <header>
+        <header class="scrolled">
             <div id="header-div">
                 <div id="header-top">
-                    <a href="index.html">
+                    <a href="../index.html">
                         <svg id="header-logo"
                             width="252.14807mm"
                             height="94.246796mm"
@@ -138,216 +138,112 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a class="nav-li-element" href="index.html">Página Principal</a></li>
-                        <li><a class="nav-li-element" href="Pages/servicios.html">Servicios</a></li>
-                        <li><a class="nav-li-element" href="Pages/nosotros.html">Nosotros</a></li>
-                        <li><a class="nav-li-element" href="Pages/contacto.html">Contacto</a></li>
-                        <li><a class="nav-li-element" href="Pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a class="nav-li-element" href="../index.html">Página Principal</a></li>
+                        <li><a class="nav-li-element" href="servicios.html">Servicios</a></li>
+                        <li><a class="nav-li-element" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="nav-li-element" href="contacto.html">Contacto</a></li>
+                        <li><a class="nav-li-element" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <main>
-            <section id="estrategia-impositiva">
+        <main id="main-servicios">
+            <div class="div-top-page">
+                <h1>Nuestros servicios</h1>
+            </div>
+            <section id="servicios-servicios">
                 <div class="common-padding">
-                    <div class="text-container">
-                        <h1>Generá bienestar mediante una estrategia impositiva.</h1>
-                        <p>
-                            Te ayudamos a desarrollar una estrategia impositiva adecuada optimizando tus recursos y garantizando el cumplimiento fiscal para reducir riesgos y maximizar tus beneficios.
-                        </p>
-                    </div>
-                    <div id="button-container">
-                        <a href="Pages/contacto.html" class="call-to-action">Contacto</a>
-                        <a href="Pages/servicios.html" class="button-underline">Servicios</a>
-                    </div>
+                    <section class="sub-section-servicios">
+                        <div class="text-container">
+                            <div class="servicio-title-container">
+                                <div class="icon-container">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                        <path
+                                            d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                </div>
+                                <h2>Cumplimiento fiscal de sociedades y asociaciones</h2>
+                            </div>
+                            <p>
+                                Nuestro equipo está dedicado a minimizar los impuestos mientras cumplimos con todos los requisitos de presentación federales y estatales. Nos tomamos el tiempo para entender las operaciones diarias y la dirección general de su empresa. Esto nos brinda la perspectiva necesaria para tomar decisiones críticas e identificar oportunidades de ahorro fiscal, siempre con sus mejores intereses en mente.
+                            </p>
+                            <p>
+                                El cumplimiento tributario suele ser un evento anual, pero nuestros servicios de asesoría se brindan durante todo el año. Las relaciones que desarrollamos con nuestros clientes se fortalecen con el tiempo y conducen a un mejor nivel de servicio. Muchos clientes nos ven como una extensión de su organización, y nos enorgullece mucho servir en esta capacidad.
+                            </p>
+                        </div>
+                        <img src="../Imagenes/servicios-empresas.webp">
+                    </section>
+                    <section class="sub-section-servicios">
+                        <div class="text-container">
+                            <div class="servicio-title-container">
+                                <div class="icon-container">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                        <path
+                                            d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                </div>
+                                <h2>
+                                    Cumplimiento fiscal de personas físicas y fideicomisos
+                                </h2>
+                            </div>
+                            <p>
+                                Preparamos declaraciones de impuestos individuales y de fideicomisos para empresarios y clientes de alto patrimonio, diseñando estrategias a medida tras analizar su situación financiera completa. No solo nos enfocamos en el cumplimiento anual, sino en optimizar cada transacción importante, eligiendo estructuras fiscales eficientes y colaborando con su abogado para minimizar impuestos sobre renta y sucesiones.
+                            </p>
+                            <p>
+                                Ofrecemos proyecciones fiscales en noviembre y diciembre para anticipar su carga tributaria antes de fin de año. Analizamos diferentes escenarios para identificar ahorros, ayudándole a tomar decisiones informadas sobre inversiones y flujo de efectivo. Nuestro enfoque combina planificación estratégica con ejecución precisa, protegiendo y potenciando su patrimonio.
+                            </p>
+                        </div>
+                        <img src="../Imagenes/servicios-individuos.webp">
+                    </section>
+                    <section class="sub-section-servicios">
+                        <div class="text-container">
+                            <div class="servicio-title-container">
+                                <div class="icon-container">
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                        <path
+                                            d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                </div>
+                                <h2>
+                                    Gestión de patrimonios 
+                                </h2>
+                            </div>
+                            <p>
+                                Las familias con alto patrimonio suelen alcanzar esta posición mediante diversos negocios e inversiones, cada uno con implicaciones fiscales únicas. Nuestro equipo les ayuda a navegar por las complejidades de las normativas fiscales estatales, federales e internacionales, estructurando sus entidades empresariales para minimizar la carga tributaria actual y futura.
+                            </p>
+                            <p>
+                                Contamos con un equipo de profesionales, asesores financieros y planificadores certificados que colaboran para proteger y hacer crecer su patrimonio. Analizamos sus inversiones y cuentas existentes, optimizándolas para maximizar beneficios fiscales y crecimiento futuro.
+                            </p>
+                        </div>
+                        <img src="../Imagenes/servicios-patrimonio.webp">
+                    </section>
                 </div>
             </section>
-            <section id="section-servicios">
-                <div class="common-padding">
-                    <div class="text-container">
-                        <h2>Somos el estudio contable que te ayuda alcanzar tus logros financieros.</h2>
-                    </div>
-                    <div id="servicios-div-card">
-                        <ul>
-                            <li class="servicios-card">
-                                <a id="card-servicio-sociedades" href="#servicio-sociedades">
-                                    <h3>
-                                        Cumplimiento fiscal de sociedades y asociaciones
-                                    </h3>
-                                </a>
-                            </li>
-                            <li class="servicios-card">
-                                <a id="card-servicio-personas" href="#servicio-personas">
-                                    <h3>
-                                        Cumplimiento fiscal de personas físicas
-                                    </h3>
-                                </a>
-                            </li>
-                            <li class="servicios-card">
-                                <a id="card-servicio-patrimonio" href="#servicio-patrimonio">
-                                    <h3>
-                                        Gestión de patrimonios
-                                    </h3>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="servicios-texto">
-                        <ul id="servicios-texto-ul">
-                            <li id="servicio-sociedades">
-                                <div class="servicio-texto-div-text">
-                                    <div class="servicio-title-container">
-                                        <div class="icon-container">
-                                            <svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                <path
-                                                    d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
-                                                    fill="currentColor"
-                                                />
-                                            </svg>
-                                        </div>
-                                        <h3>
-                                            Cumplimiento fiscal de sociedades y asociaciones
-                                        </h3>
-                                    </div>
-                                    <div class="text-container">
-                                        <p>
-                                            Nuestro equipo se dedica a minimizar los impuestos cumpliendo con todos los requisitos federales y estatales.Nos tomamos el tiempo necesario para comprender las operaciones diarias y la dirección general de su empresa.Esto nos da la visión necesaria para tomar decisiones e identificar oportunidades de ahorro fiscal con sus mejores intereses en mente.
-                                        </p>
-                                    </div> 
-                                    <a href="Pages/servicios.html" class="common-button">
-                                        Saber más
-                                    </a>
-                                </div>
-                                <div class="servicio-texto-div-img">
-                                    <img src="Imagenes/negocios-2.jpg" alt="Foto de el edificio de una empresa.">
-                                </div>
-                            </li>
-                            <li id="servicio-personas">
-                                <div class="servicio-texto-div-text">
-                                    <div class="servicio-title-container">
-                                        <div class="icon-container">
-                                            <svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                <path
-                                                    d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
-                                                    fill="currentColor"
-                                                />
-                                            </svg>
-                                        </div>
-                                        <h3>
-                                            Cumplimiento fiscal de personas físicas y fideicomisos
-                                        </h3>
-                                    </div>
-                                    <div class="text-container">
-                                        <p>
-                                            Preparamos declaraciones de impuestos individuales y de fideicomisos para nuestros clientes propietarios de negocios, clientes de gestión de patrimonios y otros contribuyentes de alto patrimonio neto. Nos tomamos el tiempo necesario para comprender su situación financiera en su totalidad.
-                                        </p>
-                                    </div>
-                                    <a href="Pages/servicios.html" class="common-button">
-                                        Saber más
-                                    </a>
-                                </div>
-                                <div class="servicio-texto-div-img">
-                                    <img src="Imagenes/particular-2.jpg" alt="Foto de una persona usando una laptop.">
-                                </div>
-                            </li>
-                            <li id="servicio-patrimonio">
-                                <div class="servicio-texto-div-text">
-                                    <div class="servicio-title-container">
-                                        <div class="icon-container">
-                                            <svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                <path
-                                                    d="M10.5858 13.4142L7.75735 10.5858L6.34314 12L10.5858 16.2427L17.6568 9.1716L16.2426 7.75739L10.5858 13.4142Z"
-                                                    fill="currentColor"
-                                                />
-                                            </svg>
-                                        </div>
-                                        <h3>
-                                            Gestión de patrimonios
-                                        </h3>
-                                    </div>
-                                    <div class="text-container">
-                                        <p>
-                                            Le ayudamos a crear, gestionar y mantener el patrimonio de su familia. Evaluamos sus inversiones y cuentas existentes y le ayudamos a optimizarlas para obtener beneficios fiscales y crecimiento en el futuro.
-                                        </p>
-                                    </div>
-                                    <a href="Pages/servicios.html" class="common-button">
-                                        Saber más
-                                    </a>
-                                </div>
-                                <div class="servicio-texto-div-img">
-                                    <img src="Imagenes/patrimonio-3.jpg" alt="Foto de una calculadora y un anotador.">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="section-nosotros">
-                <div class="common-padding">
-                    <div class="text-container">
-                        <h2>Nuestra misión es ayudarte a alcanzar tus logros personales y profesionales.</h2>
-                        <p>
-                            En Gutierrez & Asociados, creemos en la idea de ofrecer un enfoque moderno y accesible a la contabilidad. Fundado por un grupo de profesionales jóvenes con experiencia en el sector, el objetivo de nuestro trabajo es ofrecer soluciones frescas, accesibles y cercanas, que acompañen a nuestros clientes en cada etapa de su crecimiento.
-                        </p>
-                        <p>
-                            Nuestra filosofía se basa en la honestidad, la transparencia y el compromiso con el éxito de quienes confían en nosotros. Nos dedicamos a brindar un servicio personalizado y de alta calidad. Nuestro objetivo es ayudar a nuestros clientes a tomar decisiones financieras acertadas, optimizando sus recursos y garantizando el cumplimiento de sus obligaciones fiscales.
-                        </p>
-                        <a href="Pages/nosotros.html" class="button-underline">
-                            Acerca de nosotros
-                        </a>
-                    </div>
-                    <img src="Imagenes/professional-1.jpg">
-                </div>
-            </section>
-            <section id="section-clientes">
-                <div class="common-padding">
-                    <div class="text-container">
-                        <h2>La opinión de nuestros clientes.</h2>
-                        <ul id="ul-opiniones-clientes">
-                            <li>
-                                <span class="open-quote">"</span>
-                                <p>
-                                    Trabajar con Gutierrez & Asociados ha sido una experiencia muy positiva para mi empresa. Desde el principio, nos brindaron un servicio claro, personalizado y cercano, siempre atentos a nuestras necesidades. Definitivamente los recomiendo a cualquier emprendedor o pyme que busque un socio confiable en el área contable.
-                                </p>
-                                <span class="cliente-name">Ramón Alvarez - Particular</span>
-                            </li>
-                            <li>
-                                <span class="open-quote">"</span>
-                                <p>
-                                    En Gutierrez & Asociados encontramos un equipo profesional, pero a la vez accesible y dispuesto a explicar todo de manera sencilla. Nos ayudaron a resolver nuestras dudas y a estructurar mejor nuestra contabilidad. Nos ayudaron a tomar decisiones más informadas. Su enfoque personalizado es, sin duda, lo que más valoramos de su servicio.
-                                </p>
-                                <span class="cliente-name">Carla Pereyra - Pereyra Estudio Jurídico</span>
-                            </li>
-                            <li>
-                                <span class="open-quote">"</span>
-                                <p>
-                                    Como pequeña empresa, necesitábamos un estudio contable que nos diera el soporte adecuado sin complicaciones. Desde que comenzamos a trabajar con Gutierrez & Asociados, nos sentimos acompañados en todo momento. Son rápidos, eficientes y siempre están disponibles para resolver cualquier inquietud. Gracias a ellos, podemos concentrarnos en el crecimiento de nuestro negocio con total tranquilidad.
-                                </p>
-                                <span class="cliente-name">Augusto Fernandez - Pinturería Bali</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="section-contacto-index">
+            <section id="servicios-contacto">
                 <div class="common-padding">
                     <div class="text-container">
                         <span class="small-title">Contacto</span>
@@ -355,7 +251,7 @@
                             Si te gustaría obtener más Información o si te gustaría concertar una reunión llamanos o visitá el formulario de contacto.
                         </h2>
                     </div>
-                    <a href="Pages/contacto.html" class="common-button">
+                    <a href="contacto.html" class="common-button">
                         Contactanos
                     </a>
                 </div>
@@ -364,15 +260,15 @@
         <footer>
             <div class="common-padding">
                 <div id="footer-div-top">
-                    <img id="footer-div-top-logo" src="Imagenes/Logo/logo-gya-light.png" alt="Logo de Gutierrez & Asociados">
+                    <img id="footer-div-top-logo" src="../Imagenes/Logo/logo-gya-light.png" alt="Logo de Gutierrez & Asociados">
                     <div id="footer-div-top-information" class="footer-section">
                         <h4>Información</h4>
                         <ul>
-                            <li><a href="#estrategia-impositiva">Página principal</a></li>
-                            <li><a href="Pages/nosotros.html">Nosotros</a></li>
-                            <li><a href="Pages/servicios.html">Servicios</a></li>
-                            <li><a href="Pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                            <li><a href="Pages/contacto.html">Contacto</a></li>
+                            <li><a href="../index.html">Página principal</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="servicios.html">Servicios</a></li>
+                            <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
                         </ul>
                     </div>
                     <div id="footer-div-top-contacto" class="footer-section">
@@ -392,6 +288,5 @@
             </div>
         </footer>
     </body>
-    <script src="Scripts/hamburgerMenu.js"></script>
-    <script src="Scripts/headerAnimation.js"></script>
+    <script src="../Scripts/hamburgerMenu.js"></script>
 </html>

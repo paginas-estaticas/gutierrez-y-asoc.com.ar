@@ -24,15 +24,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.48229806"
-     inkscape:cx="-941.32662"
-     inkscape:cy="566.04001"
+     inkscape:zoom="0.84740551"
+     inkscape:cx="-1872.7752"
+     inkscape:cy="1102.1878"
      inkscape:window-width="1600"
-     inkscape:window-height="769"
+     inkscape:window-height="771"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="g930" />
   <defs
      id="defs2">
     <rect
@@ -59,6 +59,18 @@
        width="1129.4594"
        height="485.26556"
        id="rect236-4" />
+    <rect
+       x="-1454.9095"
+       y="271.23279"
+       width="1129.4594"
+       height="485.26556"
+       id="rect236-7-3" />
+    <rect
+       x="-1454.9095"
+       y="271.23279"
+       width="92.067631"
+       height="105.64586"
+       id="rect236-7-3-2" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -73,26 +85,26 @@
        y="0"><tspan
          x="-1297.99"
          y="437.8151"
-         id="tspan2254"><tspan
+         id="tspan1029"><tspan
            style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold';text-align:end;letter-spacing:15px;text-anchor:end"
-           id="tspan2250">Gutierrez</tspan><tspan
+           id="tspan1025">Gutierrez</tspan><tspan
            dx="15"
            style="font-size:250px;text-align:end;text-anchor:end"
-           id="tspan2252">
+           id="tspan1027">
 </tspan></tspan><tspan
          x="-1392.2775"
          y="653.02344"
-         id="tspan2264"><tspan
+         id="tspan1039"><tspan
            style="font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
-           id="tspan2256">&amp;</tspan><tspan
+           id="tspan1031">&amp;</tspan><tspan
            dx="10"
            style="letter-spacing:-10px"
-           id="tspan2258"> </tspan><tspan
+           id="tspan1033"> </tspan><tspan
            dx="-10"
            style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold'"
-           id="tspan2260">Asociados</tspan><tspan
+           id="tspan1035">Asociados</tspan><tspan
            style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold'"
-           id="tspan2262"> </tspan></tspan></text>
+           id="tspan1037"> </tspan></tspan></text>
     <g
        id="g2051"
        inkscape:export-filename="logo-gya-dark.png"
@@ -107,25 +119,26 @@
          y="0"><tspan
            x="-1297.99"
            y="437.8151"
-           id="tspan2270"><tspan
+           id="tspan1045"><tspan
              style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold';text-align:end;letter-spacing:15px;text-anchor:end"
-             id="tspan2266">Gutierrez</tspan><tspan
+             id="tspan1041">Gutierrez</tspan><tspan
              dx="15"
              style="font-size:250px;text-align:end;text-anchor:end"
-             id="tspan2268">
+             id="tspan1043">
 </tspan></tspan><tspan
-           x="-1292.2775"
+           x="-1392.2775"
            y="653.02344"
-           id="tspan2280"><tspan
+           id="tspan1055"><tspan
              style="font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
-             id="tspan2272">&amp;</tspan><tspan
+             id="tspan1047">&amp;</tspan><tspan
+             dx="10"
              style="letter-spacing:-10px"
-             id="tspan2274"> </tspan><tspan
+             id="tspan1049"> </tspan><tspan
+             dx="-10"
              style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold'"
-             id="tspan2276">Asociados</tspan><tspan
-             dx="-10.000015"
+             id="tspan1051">Asociados</tspan><tspan
              style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold'"
-             id="tspan2278"> </tspan></tspan></text>
+             id="tspan1053"> </tspan></tspan></text>
       <rect
          style="fill:#000000;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
          id="rect1429"
@@ -149,26 +162,26 @@
          y="0"><tspan
            x="-1297.99"
            y="437.8151"
-           id="tspan2286"><tspan
+           id="tspan1061"><tspan
              style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold';text-align:end;letter-spacing:15px;text-anchor:end"
-             id="tspan2282">Gutierrez</tspan><tspan
+             id="tspan1057">Gutierrez</tspan><tspan
              dx="15"
              style="font-size:250px;text-align:end;text-anchor:end"
-             id="tspan2284">
+             id="tspan1059">
 </tspan></tspan><tspan
            x="-1297.59"
            y="653.02344"
-           id="tspan2296"><tspan
+           id="tspan1071"><tspan
              style="font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
-             id="tspan2288">&amp;</tspan><tspan
+             id="tspan1063">&amp;</tspan><tspan
              dx="10"
              style="font-family:FreeSerif;-inkscape-font-specification:FreeSerif;letter-spacing:-10px"
-             id="tspan2290"> </tspan><tspan
+             id="tspan1065"> </tspan><tspan
              style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold';letter-spacing:-10px"
-             id="tspan2292">Asociados</tspan><tspan
+             id="tspan1067">Asociados</tspan><tspan
              dx="-10.000015"
              style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold'"
-             id="tspan2294"> </tspan></tspan></text>
+             id="tspan1069"> </tspan></tspan></text>
       <rect
          style="display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
          id="rect1429-6"
@@ -177,6 +190,58 @@
          x="-332.19922"
          y="211.62816"
          ry="0.42712966" />
+    </g>
+    <rect
+       style="opacity:0.97;fill:#000000;stroke:#1d56bf;stroke-width:0.145;stroke-linecap:round;paint-order:fill markers stroke"
+       id="rect918"
+       width="86.651321"
+       height="86.651321"
+       x="-531.82263"
+       y="262.40332"
+       ry="0.42712966"
+       inkscape:export-filename="gya-icon.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g930"
+       transform="matrix(1.2830322,0,0,1.3895938,-9.3604588,-174.6276)">
+      <g
+         id="g953"
+         transform="translate(-1.2512051,0.90332422)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.20107785,0,0,0.28365838,-273.06557,246.18585)"
+           id="text234-7-7"
+           style="font-size:200px;line-height:0.68;font-family:Chilanka;-inkscape-font-specification:Chilanka;letter-spacing:-2.12729px;white-space:pre;shape-inside:url(#rect236-7-3);shape-padding:15.5397;display:inline;fill:#ffffff"
+           x="1954.4504"
+           y="0"><tspan
+             x="-649.936"
+             y="414.77344"
+             id="tspan1081"><tspan
+               style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold';text-align:end;text-anchor:end"
+               id="tspan1073">G</tspan><tspan
+               style="font-size:72px;font-family:FreeSerif;-inkscape-font-specification:FreeSerif"
+               id="tspan1075"> </tspan><tspan
+               style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold'"
+               id="tspan1077">A</tspan><tspan
+               style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold'"
+               id="tspan1079"> </tspan></tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(0.13915959,0,0,0.1209229,-175.04877,304.38228)"
+           id="text234-7-7-7"
+           style="font-size:72px;line-height:0.875;font-family:Chilanka;-inkscape-font-specification:Chilanka;white-space:pre;shape-inside:url(#rect236-7-3-2);shape-padding:15.5397;display:inline;fill:#ffffff"
+           x="1954.4504"
+           y="0"><tspan
+             x="-1449.3969"
+             y="339.87344"
+             id="tspan1087"><tspan
+               style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold';text-align:end;letter-spacing:15px;text-anchor:end"
+               id="tspan1083">&amp;</tspan><tspan
+               dx="15"
+               style="font-weight:bold;font-family:FreeSerif;-inkscape-font-specification:'FreeSerif Bold'"
+               id="tspan1085"> </tspan></tspan></text>
+      </g>
     </g>
   </g>
 </svg>
