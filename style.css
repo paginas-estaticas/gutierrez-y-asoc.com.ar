@@ -60,7 +60,7 @@ body {
 
 .common-padding {
     max-width: 90rem;
-    padding: 2rem 4%;
+    padding: 2rem 8%;
 }
 
 h1, h2, h3 {
@@ -312,16 +312,16 @@ main {
 }
 
 #estrategia-impositiva h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 200;
-    line-height: 2.5rem;
-    padding-top: 1rem;
+    line-height: 3.5rem;
+    padding-top: 2.5rem;
     color: var(--whiteColor);
 }
 
 #estrategia-impositiva p {
     color: var(--whiteColor);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 300;
     margin-bottom: 0;
     padding: 0.25rem 0;
@@ -359,7 +359,7 @@ main {
     display: block;
     z-index: 10;
     content: '';
-    background: linear-gradient(to bottom,rgba(6, 6, 6, 0),rgba(19, 19, 19, 0.75) 100%);
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0),rgba(19, 19, 19, 0.75) 100%);
 }
 
 .servicios-card a {
@@ -404,12 +404,14 @@ main {
 }
 
 .servicios-card h3 {
-    font-size: 1.375rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     align-self: flex-end;
     font-weight: 300;
     margin: 1.25rem;
     z-index: 100;
     color: var(--whiteColor);
+    text-shadow: 0 0 24px black;
 }
 
 #card-servicio-sociedades {
@@ -442,7 +444,7 @@ main {
 
 .servicio-title-container {
     height: auto;
-    padding-top: 5rem;
+    padding-top: 1rem;
 }
 
 .servicio-title-container svg {
@@ -454,6 +456,10 @@ main {
 
 .servicio-title-container svg path {
     fill: var(--whiteColor);
+}
+
+.servicio-texto-div-text p {
+    margin-bottom: 1.5rem;
 }
 
 .common-button {
@@ -597,6 +603,10 @@ main {
     width: 100%;
     height: 36px;
     margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: whitesmoke;
 }
 
 .form-div-subject textarea {
@@ -605,6 +615,10 @@ main {
     width: 100%;
     height: 24vh;
     margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: whitesmoke;
 }
 
 #div-contact-form-button {
@@ -733,6 +747,33 @@ footer hr {
     padding: 1.5rem 0 0;
 }
 
+.wsp-flotante {
+    width: 82px;
+    height: 82px;
+    cursor: pointer;
+    border-radius: 60px;
+    border: none;
+    background-color: #25D366;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    translate: -30% 0;
+    z-index: 10000;
+    display: grid;
+    place-content: center;
+    transition: all 0.3s;
+    padding: 0.75rem;
+    box-shadow: 0px 0px 6px rgb(99, 99, 99);
+}
+
+.wsp-flotante svg {
+    width: 100%;
+    height: auto;
+}
+
+.wsp-flotante svg path {
+    fill: var(--whiteColor);
+}
 
 @media (min-width: 992px) {
     #header-div {
@@ -906,6 +947,10 @@ footer hr {
     #section-contacto-index h2,
     #servicios-contacto h2 {
         max-width: 20ch;
+    }
+
+    #section-contacto-index h2 {
+        font-size: 2.5rem;
     }
 
     #section-contacto-contacto .common-padding > div {
